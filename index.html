@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <div class="container allform" id="cv-form" >
+        <center> <button onclick="toggleCV()">My Resume</button></center>
+        <!-- <img  src="./cv.jpeg" alt="CV Image"> -->
+        <div id="cvImage" class="resume">
+            <div class="left-section">
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>To establish a long-term career in a company where I may utilize my industrial
+                        engineering professional skills and knowledge to be an effective Associate manager for
+                        supply chain and inspiration to those around Seeking employment with a company where
+                        I can use my talents and skills to grow the company.</p>
+                    <p></p>
+                </div>
+    
+                <div class="skills">
+                    <h2>Skill</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>PHP,</li>
+                        <li>Next.js</li>
+                        <li>Python</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+    
+                <div class="software">
+                    <h2>Software</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+    
+                <div class="language">
+                    <h2>Language</h2>
+                    <p>Urdu</p>
+                    <p>English</p>
+                </div>
+            </div>
+    
+            <div class="right-section">
+                <h1>Uzair kaim khani</h1>
+                <p>Software Developer & Web Developer</p>
+    
+                <div class="personal-info">
+                    <h2>Personal Info</h2>
+                    <p><strong>Date of Birth:</strong> 06-06-2004</p>
+                    <p><strong>Nationality:</strong> Pakistan</p>
+                    <p><strong>Religion:</strong> Islam</p>
+                    <p><strong>Marital Status:</strong> Single</p>
+                </div>
+    
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: Uzairkk020@gmail.com</p>
+                    <p>Dawood University of Karachi</p>
+                </div>
+    
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <p><strong>2021 - sales Working:</strong></p>
+                    <p>Social Media Working, Annual Report, Calendar, Visiting cards, Logo, Diary, and more.</p>
+                    
+                    <p><strong>2021 - CodeAlpha Internship:</strong></p>
+                    <p>One Month Internship - N-shirts and Front-End-Developer</p>
+                </div>
+    
+                <div class="education">
+                    <h2>Education</h2>
+                    <p><strong>2021-2024 - Aptech Site:</strong> Information Technology Course</p>
+                    <p><strong>2024 - Governor House IT course, Karachi:</strong> AI</p>
+                    <p><strong>2022 - UnGraduation:</strong> Computer science, University of Karachi</p>
+                    <p><strong>2021 - Intermediate:</strong> Pre-Engineer, Karachi Board</p>
+                    <p><strong>2019 - Matric:</strong> Science, Jhudo Board</p>
+                </div>
+            </div>
+        </div>
+         <br>
+        <h1 class="text-center my-2" >Resume Builder</h1>
+        <h3 class="text-center">By Uzair kaim khani</h3>
+   
+
+    <div class="row">
+        <div class="col-md-6">
+
+    <h3>Personal Information</h3>
+
+    <div class="form-group  mt-2" >
+        <label  for="nameField">Your Name</label> <br>
+        <input type="text"
+          placeholder="Enter here"
+          id="nameField"
+           class="form control">
+    </div>
+
+    <div class="form-group  mt-2" >
+        <label for="contactField" >Your Contact</label> <br>
+        <input type="number"
+         id="contactField"
+          placeholder="Enter here"
+           class="form control">
+    </div>
+
+
+    <div class="form-group  mt-2">
+        <label for="addressField">Your Address</label><br>
+        <textarea id="addressField" placeholder="Enter here"class="from-control " rows="4" ></textarea>
+    </div>
+
+    <p class=" my-2">Important Links</p>
+
+    <div class="form-group mt-2">
+        <label for="fbField">Facebook</label><br>
+        <input type="text"
+         id="fbField"
+          placeholder="Enter here"
+           class="form control">
+    </div>
+
+    <div class="form-group  mt-2">
+        <label for="instaField">Instagram</label><br>
+        <input type="text"
+         id="instaField"
+          placeholder="Enter here"
+           class="form control">
+    </div>
+
+    <div class="form-group  mt-2">
+        <label for="linkedField">LinkedIn</label><br>
+        <input type="text"
+         id="linkedField"
+          placeholder="Enter here"
+           class="form control">
+    </div>
+    
+        </div>
+
+        <div class="col-md-6">
+
+<h3>Professinol Information</h3>
+
+<div class="form-group  mt-2">
+    <label for="">Objective</label><br>
+    <textarea id="objectiveField" placeholder="Enter here"class="from-control weField mt-2" rows="4" ></textarea>
+</div>
+
+<div class="form-group  mt-2 " id="we">
+    <label for="">Work Experience</label><br>
+    <textarea placeholder="Enter here"class="from-control weField mt-2" rows="4" ></textarea>
+
+
+    <div class="container text-center mt-2" id="weAddButton">
+        <button onclick="addNewWWEFeild()" class="btn btn-primary btn-sm">Add</button>
+    </div>
+</div>
+
+<div class="form-group  mt-2 " id="eq">
+    <label for="">Education</label><br>
+    <textarea placeholder="Enter here"class="from-control eqField" rows="4"></textarea>
+
+    <div class="container text-center mt-2" id="eqAddButton">
+        <button onclick="addNewAQFeild()" class="btn btn-primary btn-sm">Add</button>
+    </div>
+</div>
+        </div>
+
+        <div style="text-align: center" class="container">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg mt-2">Generate CV</button>
+        </div>
+    </div>
+</div>
+    <!-- CV Template -->
+     <div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background" >
+                <!-- first col -->
+                 <img src="https://media.istockphoto.com/id/522855255/vector/male-profile-flat-blue-simple-icon-with-long-shadow.jpg?s=612x612&w=0&k=20&c=EQa9pV1fZEGfGCW_aEK5X_Gyob8YuRcOYCYZeuBzztM=" alt="" class="img-fluid myimg">
+
+                 <div class="container">
+                    <p id="nameT1">Maham Babar</p>
+                    <p id="contactT">+92-3339801, +92 34569012</p>
+                    <p id="addressT">Gulshan Karachi, Pakistan</p>
+                    <hr> 
+                    <p><a id="fbT" href="#1">https://www.facebook.com/MahamBabar</a></p>
+                    <p><a id="isntaT" href="#1">https://www.instagram.com/MahamBabar</a></p>
+                    <p><a id="linkedT" href="#1">https://www.linkedIn.com/MahamBabar</a></p>
+                 </div>
+            </div>
+            <div class="col-md-8 py-3">
+                <!-- second col -->
+                 <h1 id="nameT2" class="text-center" style="font-weight: 980">Maham Babar</h1>
+
+                 <!-- Skills card-->
+                  <div class="card mt-4">
+                    <div class="card-header background">
+                        <h4>Skills</h4>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolores a quae doloribus fuga eligendi, libero dolore commodi modi magnam reprehenderit repellendus temporibus quibusdam maxime ad nulla omnis laboriosam! Velit labore officia rerum facilis autem iste, quibusdam sequi corporis earum? Eum totam architecto nulla consequuntur, optio debitis similique voluptate quasi!</p>
+
+
+                    </div>
+                  </div>
+
+                  <!-- Work Experience -->
+                  <div class="card mt-4">
+                    <div class="card-header background">
+                        <h4>Work Experience</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                        </ul>
+                    </div>
+                  </div>
+<!-- Academic Qualifation -->
+                  <div class="card mt-4">
+                    <div class="card-header background">
+                        <h4>Academic Qualifation</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul id="eqT">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consectetur!</li>
+                        </ul>
+                    </div>
+                    <container class="mt-2 text-center">
+                        <button onclick="printCV()" class="btn background">
+                            Print Cv
+                        </button>
+                      </container>
+                  </div>
+            </div>
+        </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="./app.js"></script> -->
+     <script src="./app.js"></script>
+</body>
+</html>
